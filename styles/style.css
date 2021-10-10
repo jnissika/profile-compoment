@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 132, 255);
+}
+
+body {
+    background: #0C0B0B;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #0f0e0ef6;
+    min-width: 60%;
+    min-height: 200px;
+    border-radius: 1%;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 15px;
+}
+
+.perfil input {
+    background: #0f0e0e80;
+    border-radius: 3px;
+    width: 60px;
+    padding: 5px;
+}
+
+.perfil input:hover {
+    background: #ffffff2c;
+}
+
+.nome-perfil {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.estatisticas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 5px;
+}
+
+.estatisticas-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    height: 50px;
+    padding: 5px;
+    border-radius: 3%;
+}
+
+.items {
+    text-transform: uppercase;
+}
+
+.numeros {
+    font: bold 1.1em 'Rubik';
+}
+
+.projetos {
+    background: #046313;
+    flex: 1 1 0;
+}
+
+.estrelas {
+    background: #044A7D;
+    flex: 1 1 0;
+}
+
+.seguidores {
+    background: #725200;
+    flex: 1 1 0;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        min-width: 95%;
+    }
+
+
+
+    .estatisticas {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .perfil, .nome-perfil {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        place-items: center;
+    }
+
+    .perfil, .nome-perfil img {
+        margin-bottom: -10px;
+    }
+
+    .editar-perfil {
+        margin-top: 10px;
+    }
+}
